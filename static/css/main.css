@@ -303,11 +303,11 @@ textarea.input100 {
   z-index: -1;
   width: 300%;
   height: 100%;
-  background: #a64bf4;
-  background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: #8e9775;
+  /* background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
   background: -o-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
   background: -moz-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff); */
   top: 0;
   left: -100%;
 
@@ -377,7 +377,7 @@ textarea.input100 {
   position: absolute;
   max-width: 70%;
   background-color: #fff;
-  border: 1px solid #c80000;
+  border: 1px solid #8e9775;
   border-radius: 2px;
   padding: 4px 25px 4px 10px;
   top: 58%;
@@ -390,7 +390,7 @@ textarea.input100 {
   pointer-events: none;
 
   font-family: Poppins-Regular;
-  color: #c80000;
+  color: #8e9775;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
@@ -409,7 +409,7 @@ textarea.input100 {
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #c80000;
+  color: #8e9775;
   font-size: 16px;
   top: 58%;
   -webkit-transform: translateY(-50%);
@@ -530,20 +530,20 @@ textarea.input100 {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background: #a64bf4;
-  background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+  background: #8e97754;
+  /* background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
   background: -o-linear-gradient(right, #00dbde, #fc00ff);
   background: -moz-linear-gradient(right, #00dbde, #fc00ff);
-  background: linear-gradient(right, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff); */
   color: white;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #a64bf4;
-  background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+  background: #8e9775;
+  /* background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
   background: -o-linear-gradient(right, #00dbde, #fc00ff);
   background: -moz-linear-gradient(right, #00dbde, #fc00ff);
-  background: linear-gradient(right, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff); */
   color: white;
 }
 

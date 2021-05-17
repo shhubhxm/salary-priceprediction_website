@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> JoB Prediction Model</title>
+	<title>Salary Prediction</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -26,12 +26,6 @@
 	<link rel="stylesheet" type="text/css" href={% static  "css/main.css" %}>
 <!--===============================================================================================-->
 </head>
-<style>
-	
-	.body{
-		background-image: url({% static  "images/body-bg.jpg" %});
-	}
-</style>
 <body>
 
 
@@ -41,7 +35,7 @@
 				{% csrf_token %}
 				
 				<span class="contact100-form-title ">
-					Get Your Prediction !!
+					Salary Prediction
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
@@ -211,7 +205,7 @@
 					<span class="label-input100">Type of ownership</span>
 					<div>
 						<select class="selection-2" name="Type of ownership">
-							<option value="2"> Comapny-Private</option>
+							<option value="2"> Company-Private</option>
 							<option value="3"> Company-Public</option>
 							<option value="6"> Non-Profit Org</option>
 							<option value="9"> Sub. or Business segment</option>
