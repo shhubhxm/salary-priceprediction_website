@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-wtrmr9@!=p6u^sytw1*9j86^p)mz&vdn#kbfw_rvm8sge30%sr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jobsalaryprediction.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -113,9 +113,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATICFILES_STOREGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 django_heroku.settings(locals())
