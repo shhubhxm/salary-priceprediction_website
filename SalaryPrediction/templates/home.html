@@ -1,0 +1,310 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> JoB Prediction Model</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href={% static  "images/icons/favicon.ico" %}/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "vendor/bootstrap/css/bootstrap.min.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "fonts/font-awesome-4.7.0/css/font-awesome.min.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "vendor/animate/animate.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "vendor/css-hamburgers/hamburgers.min.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "vendor/animsition/css/animsition.min.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "vendor/select2/select2.min.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "vendor/daterangepicker/daterangepicker.css" %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static  "css/util.css" %}>
+	<link rel="stylesheet" type="text/css" href={% static  "css/main.css" %}>
+<!--===============================================================================================-->
+</head>
+<style>
+	
+	.body{
+		background-image: url({% static  "images/body-bg.jpg" %});
+	}
+</style>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="{% url 'result' %}" >
+				{% csrf_token %}
+				
+				<span class="contact100-form-title ">
+					Get Your Prediction !!
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Age of Company</span>
+					<input class="input100" type="text" name="Age" placeholder="Enter the age">
+					<span class="focus-input100"></span>
+				</div>
+				
+				
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Rating</span>
+					<input class="input100" type="text" name="Rating" placeholder="Enter the Rating">
+					<span class="focus-input100"></span>
+				</div>
+				
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">python</span>
+					<div>
+						<select class="selection-2" name="python">
+							<option value="1"> Yes</option>
+							<option value="0">No</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<!-- 2 -->
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">spark</span>
+					<div>
+						<select class="selection-2" name="spark">
+							<option value="1"> Yes</option>
+							<option value="0">No</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- 3 -->
+				
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">aws</span>
+					<div>
+						<select class="selection-2" name="aws">
+							<option value="1"> Yes</option>
+							<option value="0">No</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- 4 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">seniority</span>
+					<div>
+						<select class="selection-2" name="seniority">
+							<option value="1"> NA</option>
+							<option value="2"> Senior</option>
+							<option value="0"> junior</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<!-- 5 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">excel</span>
+					<div>
+						<select class="selection-2" name="excel">
+							<option value="1"> Yes</option>
+							<option value="0">No</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<!-- 6 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">job_state</span>
+					<div>
+						<select class="selection-2" name="job_state">
+							<option value="2"> CA</option>
+							<option value="16">MA</option>
+							<option value="25">NY</option>
+							<option value="34">VA</option>
+							<option value="11">IL</option>
+							<option value="17">MD</option>
+							<option value="28">PA</option>
+							<option value="32">TX</option>
+							<option value="35">WA</option>
+							<option value="21">NC</option>
+							<option value="23">NJ</option>
+							<option value="7">FL</option>
+							<option value="26">OH</option>
+							<option value="31">TN</option>
+							<option value="5">DC</option>
+							<option value="3">CO</option>
+							<option value="12">IN</option>
+							<option value="33">WI</option>
+							<option value="36">UT</option>
+							<option value="20">MO</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- 7 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">hourly</span>
+					<div>
+						<select class="selection-2" name="hourly">
+							<option value="1"> Yes</option>
+							<option value="0">No</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				<!-- 8 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">job_simp</span>
+					<div>
+						<select class="selection-2" name="job_simp">
+							<option value="6"> NA</option>
+							<option value="1">Data engineer</option>
+							<option value="2"> Data scientist</option>
+							<option value="3"> Director</option>
+							<option value="4"> Machine Learning engineer</option>
+							<option value="5"> Manager</option>
+							<option value="0"> Analyst</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				<!-- 9 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100"> Sector</span>
+					<div>
+						<select class="selection-2" name="Sector">
+							<option value="13">Information Technology</option>
+							<option value="5">Biotech & Pharmaceuticals</option>
+							<option value="6">Business Services</option>
+							<option value="14">Insurance</option>
+							<option value="12">Health Care</option>
+							<option value="10">Finance  </option>
+							<option value="15">Manufacturing</option>
+							<option value="2">Aerospace & Defense</option>
+							<option value="9">Education  </option>
+							<option value="21">Retail</option>
+							<option value="19">Oil, Gas, Energy & Utilities</option>
+							<option value="11">Government </option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				<!-- 10 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Type of ownership</span>
+					<div>
+						<select class="selection-2" name="Type of ownership">
+							<option value="2"> Comapny-Private</option>
+							<option value="3"> Company-Public</option>
+							<option value="6"> Non-Profit Org</option>
+							<option value="9"> Sub. or Business segment</option>
+							<option value="4"> Hospital</option>
+							<option value="5"> Government</option>
+							<option value="1"> College or University</option>
+							<option value="7"> Other Org</option>
+							<option value="8"> School/School District</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				<!-- 11 -->
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Industry</span>
+					<div>
+						<select class="selection-2" name="Industry">
+							<option value="8"> Biotech & Pharmaceuticals </option>
+							<option value="33"> Insurance Carriers  </option>
+							<option value="11"> Computer Hardware & Software</option>
+							<option value="30"> IT Services</option>
+							<option value="28"> Health Care Services & Hospitals </option>
+							<option value="19"> Enterprise Software & Network Solutions</option>
+							<option value="34"> Consulting    </option>
+							<option value="13"> Internet</option>
+							<option value="3"> Aerospace & Defense</option>
+							<option value="2"> Advertising & Marketing</option>
+							<option value="15"> Consumer Products Manufacturing</option>
+							<option value="45"> Research & Development</option>
+							<option value="10"> Colleges & Universities</option>
+							<option value="18"> Energy    </option>
+							<option value="6"> Banks & Credit Unions</option>
+							<option value="21"> Federal Agencies</option>
+
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src={% static  "vendor/jquery/jquery-3.2.1.min.js" %}></script>
+<!--===============================================================================================-->
+	<script src={% static  "vendor/animsition/js/animsition.min.js" %}></script>
+<!--===============================================================================================-->
+	<script src={% static  "vendor/bootstrap/js/popper.js" %}></script>
+	<script src={% static  "vendor/bootstrap/js/bootstrap.min.js" %}></script>
+<!--===============================================================================================-->
+	<script src={% static  "vendor/select2/select2.min.js" %}></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src={% static  "vendor/daterangepicker/moment.min.js" %}></script>
+	<script src={% static  "vendor/daterangepicker/daterangepicker.js" %}></script>
+<!--===============================================================================================-->
+	<script src={% static  "vendor/countdowntime/countdowntime.js" %}></script>
+<!--===============================================================================================-->
+	<script src={% static  "js/main.js" %}></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src={% static  "https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" %}></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
