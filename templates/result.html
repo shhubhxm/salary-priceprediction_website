@@ -30,6 +30,9 @@
 
 
     <div class="container-contact100">
+		<div class="col-md-6">
+          <img src="{% static  'images/body-bg05.jpg' %}" alt="Image" class="img-fluid">
+        </div>
 		<div class="wrap-contact100">
 
             <span class="contact100-form-title ">
@@ -39,7 +42,7 @@
             <p class="input100">Prediction is shown below.</p>
 
             <br> <br> <h3>Predicted price is {{prediction}}</h3> <br> <br>
-
+			
             <div class="container-contact100-form-btn" onclick="location.href='{% url 'home' %}'">
                 <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
@@ -50,8 +53,9 @@
                         </span>
                     </button>
                 </div>
+				
             </div>
-           
+			<br> <p>&copy Shubham Vyas</p> 
             <!-- <button type="submit" value="Return To Home" onclick="location.href='{% url 'home' %}'" class="fa fa-long-arrow-right m-l-7">Return To Home</button> -->
         </div>
     </div>
