@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-wtrmr9@!=p6u^sytw1*9j86^p)mz&vdn#kbfw_rvm8sge30%sr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jobsalaryprediction.herokuapp.com']
 
 
 # Application definition
