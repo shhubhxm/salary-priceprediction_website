@@ -308,6 +308,10 @@ textarea.input100 {
   background: -o-linear-gradient(left, #464f41, #56776c, #bfcba8, #56776c);
   background: -moz-linear-gradient(left, #464f41, #56776c, #bfcba8, #56776c);
   background: linear-gradient(left, #464f41, #56776c, #bfcba8, #56776c);
+  /* background: -webkit-linear-gradient(left, #464f41, #a98b98, #bfcba8, #56776c);
+  background: -o-linear-gradient(left, #464f41, #a98b98, #bfcba8, #56776c);
+  background: -moz-linear-gradient(left, #464f41, #a98b98, #bfcba8, #56776c);
+  background: linear-gradient(left, #464f41, #a98b98, #bfcba8, #56776c); */
   top: 0;
   left: -100%;
 
@@ -531,19 +535,19 @@ textarea.input100 {
 
 .select2-container .select2-results__option[aria-selected="true"] {
   background: #8e9775;
-  background: -webkit-linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
-  background: -o-linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
-  background: -moz-linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
-  background: linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
+  background: -webkit-linear-gradient(left, #f7f7e8, #92967d, #6e7c7c, #435560);
+  background: -o-linear-gradient(left, #f7f7e8, #92967d, #6e7c7c, #435560);
+  background: -moz-linear-gradient(left, #f7f7e8, #92967d, #6e7c7c, #435560);
+  background: linear-gradient(left, #f7f7e8, #92967d, #6e7c7c, #435560);
   color: white;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background: #8e9775;
-  background: -webkit-linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
-  background: -o-linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
-  background: -moz-linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
-  background: linear-gradient(left, #435560, #6e7c7c, #92967d, #6e7c7c);
+  background: -webkit-linear-gradient(left, #435560, #6e7c7c, #92967d, #f7f7e8);
+  background: -o-linear-gradient(left, #435560, #6e7c7c, #92967d, #f7f7e8);
+  background: -moz-linear-gradient(left, #435560, #6e7c7c, #92967d, #f7f7e8);
+  background: linear-gradient(left, #435560, #6e7c7c, #92967d, #f7f7e8);
   color: white;
 }
 

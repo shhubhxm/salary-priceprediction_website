@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V4</title>
+	<title>Salary Prediction</title>	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -41,7 +41,7 @@
 
             <p class="input100">Prediction is shown below.</p>
 
-            <br> <br> <h3>Predicted price is {{prediction}}</h3> <br> <br>
+            <br> <br> <h4>Your Predicted Salary is {{prediction}}</h3> <br> <br>
 			
             <div class="container-contact100-form-btn" onclick="location.href='{% url 'home' %}'">
                 <div class="wrap-contact100-form-btn">
@@ -55,7 +55,10 @@
                 </div>
 				
             </div>
-			<br> <p>&copy Shubham Vyas</p> 
+			<br> <p>&copy Shubham Vyas</p>
+			<br><small><p  style="color:#c8c2bc;">Model Used: Random Forest Regressor</p></small>
+			<small><p  style="color:#c8c2bc;">mean absolute error: ~ $ 11K</p></small>
+
             <!-- <button type="submit" value="Return To Home" onclick="location.href='{% url 'home' %}'" class="fa fa-long-arrow-right m-l-7">Return To Home</button> -->
         </div>
     </div>
