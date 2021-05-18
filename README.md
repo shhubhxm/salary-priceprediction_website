@@ -22,7 +22,8 @@ Takes the 13 Parameters mentioned above.
 <span style="display:block;text-align:center">![](images/home_page.png)</span>
 
 ## Result
-Salary is predicted by Random Forest Regressor with (_mean absolute error: 11.073154362416108_)
+Salary is predicted by Random Forest Regressor with (_mean absolute error: 11.073154362416108_).
+
 The predicted salary is in: (_$1000_)
 
 <span style="display:block;text-align:center">![](images/result.png)</span>
